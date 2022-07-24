@@ -24,6 +24,6 @@ int main(){
             cout<<letters[i][j]<<endl;
         }
     }
-
+    
     return 0;
 }
