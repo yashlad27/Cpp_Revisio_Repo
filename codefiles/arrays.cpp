@@ -24,6 +24,21 @@ int main(){
             cout<<letters[i][j]<<endl;
         }
     }
-    
     return 0;
 }
+    
+//     // string cars[4] = {"ferrari", "bmw", "volvo", "audi"};
+//     int n;
+//     cout<<"Enter number of cars: "<<endl;
+//     cin>>n;
+//     string cars[n];
+//     //n = sizeof(cars)/sizeof(int);
+    
+//     for(int i=0; i<n; i++){
+//         cout<<"Enter different cars: "<<endl;
+//         cin>>cars[i];
+//     }
+//     for(int i=0; i<n; i++){
+//         cout<<cars[i]<<endl; 
+//     }
+
