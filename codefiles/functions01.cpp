@@ -16,7 +16,6 @@ int main(){
 
     myStringFun("yash");
     myStringFun("yash");
-
     return 0;
 }
 
