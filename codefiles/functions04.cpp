@@ -2,11 +2,16 @@
 using namespace std;
 
 // PASS by Reference:
-
 void swapnUM(int &x, int &y){
     int z = x;
     x = y; 
     y = z;
+}
+
+void myFunction(int myNum[5]){
+    for(int i=0; i<5; i++){
+        cout<<myNum[i]<<endl;
+    }
 }
 
 int main(){
@@ -20,5 +25,8 @@ int main(){
 
     cout<<"After swap: "<<endl;
     cout<<firstnum<<" "<<secondnum<<"\n"; 
+
+    int myNum[5]={10,20,30,40,50};
+    myFunction(myNum);
     return 0;
 }
