@@ -21,7 +21,7 @@ int main(){
         vec1.push_back(element);
     }
 
-    // vector::insert method
+    // vector::insert method    
     vector<int> :: iterator iter = vec1.begin();
     vec1.insert(iter, 50, 556);
 
