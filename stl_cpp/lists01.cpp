@@ -33,6 +33,14 @@ int main()
 
     display(list1);
 
+    // Removing elements from list1: 
+
+    list1.pop_back(); // removing from the end
+    display(list1);
+
+    list1.pop_front(); // removing from the front
+    display(list1);
+
     list<int> list2(4);   // empty list of size 7
     list<int> :: iterator iter;
     iter = list2.begin();
