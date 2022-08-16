@@ -2,7 +2,7 @@
 
 C++ Basic code syntax, stl library examples and dsa udemy course
 
-Sequence Containers: 
+## Sequence Containers: 
 1. Vectors: 
 -> random access - fast
 -> MIDDLE insertion/ deletion - slow
@@ -13,8 +13,8 @@ Sequence Containers:
 -> MIDDLE deletion/ insertion - fast
 -> Deletion/ insertion at the end - fast
 
-Associative Containers:
+## Associative Containers:
 -> All operations fast except Random Access
 
-Derived Containers:
+## Derived Containers:
 -> depends on Data structure.
