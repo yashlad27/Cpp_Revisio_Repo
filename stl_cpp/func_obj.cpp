@@ -7,13 +7,13 @@ int main()
     int arr[] = {18888,22,3,4222,51,6,7};
     sort(arr, arr+6);
     cout<<"Sorting in Ascending: ";
-    for(int i=0; i<6; i++){
+    for(int i=0; i<7; i++){
         cout<<arr[i]<<" ";
     }
     cout<<endl;
     sort(arr, arr+6, greater<int>());
     cout<<"Sorting in Descending: ";
-    for(int i=0; i<6; i++){
+    for(int i=0; i<7; i++){
         cout<<arr[i]<<" ";
     }
     return 0;
