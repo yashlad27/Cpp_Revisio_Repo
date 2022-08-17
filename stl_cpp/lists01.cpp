@@ -41,6 +41,17 @@ int main()
     list1.pop_front(); // removing from the front
     display(list1);
 
+    list1.remove(65); // removes all occurences from list
+    display(list1);
+
+    // SORTING THE LIST:
+    list1.sort();
+    display(list1);
+
+    // Reversing the list:
+    list1.reverse();
+    display(list1);
+
     list<int> list2(4);   // empty list of size 7
     list<int> :: iterator iter;
     iter = list2.begin();
@@ -56,5 +67,10 @@ int main()
     iter++;
 
     display(list2);
+
+    // MERGING TWO LISTS:
+    cout<<"List after merging: "<<endl;
+    list1.merge(list2);
+    display(list1);
     return 0;
 }
