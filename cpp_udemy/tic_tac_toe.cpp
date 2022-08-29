@@ -61,6 +61,32 @@ void runGame(){
 }
 
 //-------------------------------------//
+//------|Getting User Input|-----------//
+//-------------------------------------//
+void getUserInput(bool xTurn, string gameBoard[ROWS][COLS]){
+    int row = -1;
+    int col = -1;
+    bool keepASKING = true;
+
+    while(keepASKING){
+        // keep asking until you get a valid answer:
+        cout<<"Please enter the ROW then the COLUMN, each from 0, 1 or 2, seperated by space!"<<endl;
+        cin>>row;
+        cin>>col;
+        if(row>=0 && col>=0 && row<=2 && col<=2){
+            // in range selection
+            // but it still can be occupied by an X or O already...
+            if(!cellAlreadyOccupied(row, col, gameBoard)){
+                // only set the cell if row/col is valid AND not occupied!
+                keepASKING = false;
+            }else{
+                cout<<"That cell is already occupied!!!"<<endl;
+            }
+        }
+    }// end while
+}
+
+//-------------------------------------//
 //------|Initialise Game Board|-------//
 //-------------------------------------//
 void initialiseGameBoard(string gameBoard[ROWS][COLS]){
