@@ -118,20 +118,12 @@ void printCurrentBoard(string gameBoard[ROWS][COLS]){
 }
 
 //-------------------------------------//
-//------|is Board Full?|-------//
+//------------|Get Winner|-------------//
 //-------------------------------------//
-bool isBoardFull(string gameBoard[ROWS][COLS]){
-    int countFILL=0;
+string getWinner(string gameBoard[ROWS][COLS]){
     for(int i=0; i<ROWS; i++){
-        for(int j=0; j<COLS; j++){
-            if(gameBoard[i][j]!=" "){
-                return true;
-                countFILL++;
-            }
-        }
-        cout<<endl;
+        if(gameBoard[i][0]!=" "&&)
     }
-    return countFILL == 9; // all 9 cells are FULL!
 }
 
 //-------------------------------------//
@@ -152,4 +144,21 @@ bool cellAlreadyOccupied(int row, int col, string gameBoard[ROWS][COLS]){
     // }
 
     return gameBoard[row][col] != " "; // if not a space, then it's occupied 
+}
+
+//-------------------------------------//
+//------|is Board Full?|-------//
+//-------------------------------------//
+bool isBoardFull(string gameBoard[ROWS][COLS]){
+    int countFILL=0;
+    for(int i=0; i<ROWS; i++){
+        for(int j=0; j<COLS; j++){
+            if(gameBoard[i][j]!=" "){
+                return true;
+                countFILL++;
+            }
+        }
+        cout<<endl;
+    }
+    return countFILL == 9; // all 9 cells are FULL!
 }
