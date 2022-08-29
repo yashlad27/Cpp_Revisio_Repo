@@ -21,7 +21,43 @@ int main(){
 }
 
 void runGame(){
+    string winner = "";
+    bool xturn = true; // start with X's Turn
+    int theRow = 0;
+    int theCol = 0;
+    string gameBoard[ROWS][COLS];
 
+    initialiseGameBoard(gameBoard);
+    //inital print
+    printCurrentBoard(gameBoard);
+
+    while(winner==""){
+        if(xturn){
+            cout<<"It's X's Turn"<<endl;
+        }
+        else{
+            cout<<"It's O's Turn"<<endl;
+        }
+        getUserInput(xturn, gameBoard);
+        cout<<endl; // extra space
+        printCurrentBoard(gameBoard); // reprint the board
+        winner = getWinner(gameBoard); // check for winner
+        xturn = !xturn; // flip it
+
+        if(winner=="" && isBoardFull(gameBoard)){
+            // Cat's game ... no winner!
+            winner ="C";
+        }
+    }// end while
+
+    // cat's game:
+    cout<<endl;
+    if(winner=="C"){
+        cout<<"It was the Cat's Game! NO WINNER!!"<<endl;
+    }else{
+        cout<<"The winner is: "<<winner<<endl; // prints X or O
+    }
+    cout<<endl; // extra space
 }
 
 //-------------------------------------//
