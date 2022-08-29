@@ -63,7 +63,7 @@ void runGame(){
 //-------------------------------------//
 //------|Getting User Input|-----------//
 //-------------------------------------//
-void getUserInput(bool xTurn, string gameBoard[ROWS][COLS]){
+void getUserInput(bool xturn, string gameBoard[ROWS][COLS]){
     int row = -1;
     int col = -1;
     bool keepASKING = true;
@@ -84,6 +84,13 @@ void getUserInput(bool xTurn, string gameBoard[ROWS][COLS]){
             }
         }
     }// end while
+
+    // printing user input:
+    if(xturn){
+        gameBoard[row][col] = "X";
+    }else{
+        gameBoard[row][col] = "O";
+    }
 }
 
 //-------------------------------------//
@@ -106,7 +113,7 @@ void printCurrentBoard(string gameBoard[ROWS][COLS]){
         for(int j=0; j<COLS; j++){
             cout<<gameBoard[i][j];
             if(j<2){
-                cout<<"|";
+                cout<<" | ";
             }
         }
         cout<<endl;
@@ -128,7 +135,6 @@ string getWinner(string gameBoard[ROWS][COLS]){
             // we have a HORIZONTAL MATCH!
         }
     }
-
     // check COLS:
     for(int i=0; i<COLS; i++){
         if(gameBoard[0][i]!=" " && gameBoard[1][i]==gameBoard[0][i] && gameBoard[1][i] == gameBoard[2][i]){
