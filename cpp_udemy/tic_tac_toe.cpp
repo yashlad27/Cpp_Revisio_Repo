@@ -21,27 +21,43 @@ int main(){
 }
 
 void runGame(){
-    
+
 }
 
+//-------------------------------------//
+//------|Initialise Game Board|-------//
+//-------------------------------------//
 void initialiseGameBoard(string gameBoard[ROWS][COLS]){
     for(int i=0; i<ROWS; i++){
         for(int j=0; j<COLS; j++){
-            gameBoard[i][j] = " ";
+            gameBoard[i][j] = " "; // empty space
         }
         cout<<endl;
     }
 }
 
+//-------------------------------------//
+//-------|Print current Board|---------//
+//-------------------------------------//
 void printCurrentBoard(string gameBoard[ROWS][COLS]){
     for(int i=0; i<ROWS; i++){
         for(int j=0; j<COLS; j++){
-            cout<<gameBoard[i][j]<<" ";
+            cout<<gameBoard[i][j];
+            if(j<2){
+                cout<<"|";
+            }
         }
         cout<<endl;
+        if(i<2){
+            cout<<"- - - - -"<<endl;
+        }
     }
+    cout<<endl; // extra spacing
 }
 
+//-------------------------------------//
+//------|is Board Full?|-------//
+//-------------------------------------//
 bool isBoardFull(string gameBoard[ROWS][COLS]){
     for(int i=0; i<ROWS; i++){
         for(int j=0; j<COLS; j++){
@@ -53,6 +69,9 @@ bool isBoardFull(string gameBoard[ROWS][COLS]){
     }
 }
 
+//-------------------------------------//
+//------|cells already occupied|-------//
+//-------------------------------------//
 bool cellAlreadyOccupied(int row, int col, string gameBoard[ROWS][COLS]){
     for(int i=0; i<ROWS; i++){
         for(int j=0; j<COLS; j++){
