@@ -15,6 +15,49 @@ bool isBoardFull(string gameBoard[ROWS][COLS]);
 
 int main(){
     // TIC - TAC - TOE
+    runGame();
 
     return 0;
+}
+
+void initialiseGameBoard(string gameBoard[ROWS][COLS]){
+    for(int i=0; i<ROWS; i++){
+        for(int j=0; j<COLS; j++){
+            gameBoard[i][j] = " ";
+        }
+        cout<<endl;
+    }
+}
+
+void printCurrentBoard(string gameBoard[ROWS][COLS]){
+    for(int i=0; i<ROWS; i++){
+        for(int j=0; j<COLS; j++){
+            cout<<gameBoard[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+bool isBoardFull(string gameBoard[ROWS][COLS]){
+    for(int i=0; i<ROWS; i++){
+        for(int j=0; j<COLS; j++){
+            if(gameBoard[i][j]!=" "){
+                return true;
+            }
+        }
+        cout<<endl;
+    }
+}
+
+bool cellAlreadyOccupied(int row, int col, string gameBoard[ROWS][COLS]){
+    for(int i=0; i<ROWS; i++){
+        for(int j=0; j<COLS; j++){
+            if(gameBoard[row][col]!=" "){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        cout<<endl;
+    }
 }
