@@ -20,6 +20,10 @@ int main(){
     return 0;
 }
 
+void runGame(){
+    
+}
+
 void initialiseGameBoard(string gameBoard[ROWS][COLS]){
     for(int i=0; i<ROWS; i++){
         for(int j=0; j<COLS; j++){
@@ -54,8 +58,10 @@ bool cellAlreadyOccupied(int row, int col, string gameBoard[ROWS][COLS]){
         for(int j=0; j<COLS; j++){
             if(gameBoard[row][col]!=" "){
                 return true;
+                cout<<row<<" "<<col;
             }else{
                 return false;
+                cout<<"Cell is already occupied!";
             }
         }
         cout<<endl;
