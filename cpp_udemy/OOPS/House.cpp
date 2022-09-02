@@ -1,4 +1,4 @@
-#include "house.h"
+#include "House.h"
 
     // add name of class and not object:
         void House::setNumStories(int numStories){
