@@ -2,7 +2,7 @@
 using namespace std;
 class House {
     public:
-    // SETTERS:
+    // SETTERS: modify internal data
         void setNumStories(int numStories){
             this->numStories = numStories;
         }
@@ -12,14 +12,16 @@ class House {
         void setColor(string color){
             this->color = color;
         }
-    // GETTERS:
-        int getNumStories(){
+    // GETTERS: return data stored inside class
+        
+    // when to use const: when we dont want to change the data inside a function
+        int getNumStories() const {
             return numStories;
         }
-        int getNumWindows(){
+        int getNumWindows() const {
             return numWindows;
         }
-        string getColor(){
+        string getColor() const {
             return color;
         }
     private:
