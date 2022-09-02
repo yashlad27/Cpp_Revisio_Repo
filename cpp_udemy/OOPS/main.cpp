@@ -29,11 +29,19 @@ class House {
 };
 
 int main(){
-
     House my_house;
     House your_house;
 
     my_house.setNumStories(2);
-    
+    my_house.setNumWindows(9);
+    my_house.setColor("red");
+
+    your_house.setNumStories(3);
+    your_house.setNumWindows(10);
+    your_house.setColor("blue");
+
+    cout<<"My House is "<<my_house.getColor()<<" and has "<<my_house.getNumStories()<< " stories and "<< my_house.getNumWindows()<< " windows."<<endl;
+
+    cout<<"Your House is "<<your_house.getColor()<<" and has "<<your_house.getNumStories()<< " stories and "<< your_house.getNumWindows()<< " windows."<<endl;
     return 0;
 }
