@@ -1,0 +1,24 @@
+Programming Paradigms:
+1. Procedural
+2. OOP
+
+OOP: Objects encapsulate behaviours and data
+
+Three Principles of OOPS:
+1. Encapsulation
+2. Inheritance
+3. Polymorphism
+
+Encapsulation: Data Members and Member Functions
+
+-> One of three primary Principles Of OOPS
+-> unites behaviours and data into Object
+
+Encapsulation Provides:
+1. SECURITY:
+    information hiding
+    data is protected from outside world
+
+2. PORTABILITY
+
+-> Class acts as a blueprint for an object.
