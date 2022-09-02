@@ -22,3 +22,9 @@ Encapsulation Provides:
 2. PORTABILITY
 
 -> Class acts as a blueprint for an object.
+
+Seperate Compliation:
+-> Specification file (.h)
+    contains prototypes and data members
+-> Implementation file (.cpp) 
+    function definitions for member functions
