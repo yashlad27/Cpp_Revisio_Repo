@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 class House {
     public:
     // SETTERS:
@@ -30,5 +29,11 @@ class House {
 };
 
 int main(){
+
+    House my_house;
+    House your_house;
+
+    my_house.setNumStories(2);
+    
     return 0;
 }
