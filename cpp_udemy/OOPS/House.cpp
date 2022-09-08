@@ -8,6 +8,10 @@ House::House(){
     this->numWindows = 4;
     this->color = "white";
 }
+// Defualt Destructor:
+House::~House(){
+    cout<<"The "<<color<<" house with "<<numStories<<" stories and "<< numWindows<<" windows is being destroyed!"<<endl;
+}
     // add name of class and not object:
         void House::setNumStories(int numStories){
             this->numStories = numStories;

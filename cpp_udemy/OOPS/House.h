@@ -9,6 +9,8 @@ class House {
     public:
         // adding constructor:
         House(); 
+        // adding destructor:
+        ~House();
 
         void setNumStories(int numStories);
         void setNumWindows(int numWindows);
