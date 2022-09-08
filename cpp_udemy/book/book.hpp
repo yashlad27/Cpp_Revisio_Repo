@@ -12,7 +12,9 @@ class book{
         string getTitle() const;
         string getGenre() const;
         int getPages() const;
-
+        // add print_book_details to the book class:
+        void print_book_details() const;
+        
     private:
     string author;
     string title;
