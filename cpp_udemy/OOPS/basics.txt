@@ -32,3 +32,6 @@ Seperate Compliation:
 Compliation Line should be:
 g++ main.cpp House.cpp {2 files}
 and to execute ./a.out
+
+UML: Unified Modelling Language
+Used to help software engineers to plan and design software
