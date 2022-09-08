@@ -9,7 +9,10 @@ int main(){
 
     cout<<"r1 area is: "<<r1.area()<<endl;
     cout<<"r2 area is: "<<r2.area()<<endl;
+    cout<<"r1 perimeter is: "<<r1.perimeter()<<endl;
+    cout<<"r2 perimeter is: "<<r2.perimeter()<<endl;
 
+    cout<<endl;
     //changing length and width of rectangle
 
     r1.setLength(22);
@@ -17,8 +20,9 @@ int main(){
 
     cout<<"r1 length is: "<<r1.getLength()<<endl;
     cout<<"r1 width is: "<<r1.getWidth()<<endl;
-    
+
     cout<<"r1 area is: "<<r1.area()<<endl;
 
+    cout<<"r1 perimeter is: "<<r1.perimeter()<<endl;
     return 0;
 }

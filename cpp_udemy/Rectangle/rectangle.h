@@ -12,6 +12,7 @@ class rectangle{
         void setLength(double length);
         void setWidth(double width);
         double area();
+        double perimeter();
 
     private:
         double length;

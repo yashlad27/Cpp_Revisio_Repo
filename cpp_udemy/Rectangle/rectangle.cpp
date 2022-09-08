@@ -33,3 +33,7 @@ void rectangle::setWidth(double width){
 double rectangle::area(){
     return length*width;
 }
+
+double rectangle::perimeter(){
+    return 2*length + 2*width;
+}
