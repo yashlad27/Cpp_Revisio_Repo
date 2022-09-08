@@ -5,6 +5,7 @@ class circle{
     public:
         circle();
         circle(double radius);
+        double getRadius();
         void setRadius(double radius);
         double circumference();
         double area();
