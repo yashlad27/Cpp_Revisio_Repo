@@ -1,3 +1,7 @@
+#ifndef HOUSE_H
+#define HOUSE_H
+// preprocessor directives
+
 #include<string>
 using namespace std;
 
@@ -15,3 +19,5 @@ class House {
         int numWindows;
         string color;
 };
+
+#endif
