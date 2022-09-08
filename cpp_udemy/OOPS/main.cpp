@@ -37,6 +37,7 @@ void print_House_data(const House& house); // increasing reuseability of code
 int main(){
     House my_house;
     House your_house;
+    House para_house(10, 40, "Yellow"); // looks similar to a function call!
 
     my_house.print(); // checking the default constructor:
 
@@ -61,6 +62,7 @@ int main(){
 
     my_house.print();
     your_house.print();
+    // para_house.print();
 
     cout<<"----------|X|---------"<<endl;
     return 0;

@@ -11,6 +11,8 @@ class House {
         House(); 
         // adding destructor:
         ~House();
+        // parameterized constructor:
+        House(int numStories, int numWindows, string color);
 
         void setNumStories(int numStories);
         void setNumWindows(int numWindows);

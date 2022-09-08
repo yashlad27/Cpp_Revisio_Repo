@@ -12,6 +12,22 @@ House::House(){
 House::~House(){
     cout<<"The "<<color<<" house with "<<numStories<<" stories and "<< numWindows<<" windows is being destroyed!"<<endl;
 }
+// Parameterised Constructor:
+House::House(int numStories, int numWindows, string color){
+
+    this->numStories = numStories;
+    this->numWindows = numWindows;
+    this->color = color;
+
+    cout<<"You are now using parameterised constructor!"<<endl;
+
+    cout<<"Number of stories: "<<numStories<<endl;
+    cout<<"Number of Windows: "<<numWindows<<endl;
+    cout<<"Colour of House: "<<color<<endl;
+
+    cout<<endl;
+}
+
     // add name of class and not object:
         void House::setNumStories(int numStories){
             this->numStories = numStories;
