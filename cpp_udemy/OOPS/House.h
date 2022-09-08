@@ -14,6 +14,8 @@ class House {
         int getNumStories() const;
         int getNumWindows() const;
         string getColor() const;
+
+        void print() const;
     private:
         int numStories;
         int numWindows;

@@ -28,3 +28,7 @@ Seperate Compliation:
     contains prototypes and data members
 -> Implementation file (.cpp) 
     function definitions for member functions
+
+Compliation Line should be:
+g++ main.cpp House.cpp {2 files}
+and to execute ./a.out

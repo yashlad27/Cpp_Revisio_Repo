@@ -54,8 +54,11 @@ int main(){
 
     cout<<"----------|X|---------"<<endl;
 
-    print_House_data(my_house);
-    print_House_data(your_house);
+    // print_House_data(my_house);
+    // print_House_data(your_house);
+
+    my_house.print();
+    your_house.print();
 
     cout<<"----------|X|---------"<<endl;
     return 0;
