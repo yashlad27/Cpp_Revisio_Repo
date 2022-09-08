@@ -28,3 +28,9 @@ string book::getGenre() const{
 int book::getPages() const{
     return numPages;
 }
+
+void book::print_book_details() const{
+    cout<<"The author of book is "<<author<<" and the title of book is "<<title<<" it's genre is "<<genre<<" ,number of pages in the book are "<<numPages<<"."<<endl;
+
+    cout<<endl;
+}

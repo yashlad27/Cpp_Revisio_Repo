@@ -10,9 +10,16 @@ int main(){
     book book2("George RR Martin", "Game Of Thrones", "Fantasy", 1024);
     book book3("James Stewart", "Calculus", "Math", 981);
 
+    cout<<"Printing book details using function:"<<endl;
     print_book(book1);
     print_book(book2);
     print_book(book3);
+
+    cout<<"Printing book details using class:"<<endl;
+    book1.print_book_details();
+    book2.print_book_details();
+    book3.print_book_details();
+
     return 0;
 }
 
