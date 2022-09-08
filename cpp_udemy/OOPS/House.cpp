@@ -2,6 +2,12 @@
 #include<iostream>
 using namespace std;
 
+// Default constructor:
+House::House(){
+    this->numStories = 1;
+    this->numWindows = 4;
+    this->color = "white";
+}
     // add name of class and not object:
         void House::setNumStories(int numStories){
             this->numStories = numStories;

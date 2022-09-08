@@ -38,6 +38,8 @@ int main(){
     House my_house;
     House your_house;
 
+    my_house.print(); // checking the default constructor:
+
     my_house.setNumStories(2);
     my_house.setNumWindows(9);
     my_house.setColor("red");

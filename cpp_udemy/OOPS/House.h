@@ -7,6 +7,9 @@ using namespace std;
 
 class House {
     public:
+        // adding constructor:
+        House(); 
+
         void setNumStories(int numStories);
         void setNumWindows(int numWindows);
         void setColor(string color);
