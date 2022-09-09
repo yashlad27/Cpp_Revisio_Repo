@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<string>
+#include<stdexcept>
 using namespace std;
 
 int main(){
@@ -15,7 +16,11 @@ int main(){
         cout<<name<<endl;
     }
 
-    // exception:
-    names.at(5) = "Tyler";
+    try{
+        // exception:
+        names.at(5) = "Tyler";
+    }catch (const out_of_range & err){
+            cout<<err.what()<<endl;
+    }
     return 0;
 }
