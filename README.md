@@ -51,3 +51,11 @@ int *ptr1, *ptr2, *ptr3.
     eg: *myNum = 400;
 3. used as the binary multiplication operator.
     eg: int myNum = hisnum * hernum
+
+# Dynamic Memory:
+->is allocated at runtime instead of being set at compile time.
+->useful bcuz often we don't know how many of certain variables we will need.
+
+## c++ syntax for dynamic memory:
+->the NEW keyword allows us to reserve memory on the free store, more commonly known as the HEAP.
+->the DELETE keyword is for returning dynmically allocated memory when we're done using it.

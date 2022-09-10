@@ -18,7 +18,7 @@ int main(){
     double* double_ptr = &my_double;
 
     // indirection and deref:
-    cout<<"my_double original contents: "<<my_double<<endl;
+    cout<<"my_double original contents: "<<*double_ptr<<endl;
 
     cout<<"pointer holds the value: "<<double_ptr<<endl;
 
