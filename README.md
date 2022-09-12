@@ -1,4 +1,4 @@
-# Cpp_Revisio_Repo
+# Cpp_Revision_Repo
 -----------------------------------------------------------------------------------------
 C++ Basic code syntax, stl library examples and dsa udemy course
 
