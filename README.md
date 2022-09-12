@@ -58,4 +58,4 @@ int *ptr1, *ptr2, *ptr3.
 
 ## c++ syntax for dynamic memory:
 ->the NEW keyword allows us to reserve memory on the free store, more commonly known as the HEAP.
-->the DELETE keyword is for returning dynmically allocated memory when we're done using it.
+->the DELETE keyword is for returning dynamically allocated memory when we're done using it.
